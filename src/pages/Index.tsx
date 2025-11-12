@@ -5,9 +5,9 @@ import profileImage from "@/assets/profile.jpg";
 
 const Index = () => {
   const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-[#0077B5]" },
-    { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-foreground" },
-    { icon: Mail, href: "mailto:contact@example.com", label: "Email", color: "hover:text-primary" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/matthieu-luiggi", label: "LinkedIn", color: "hover:text-[#0077B5]" },
+    { icon: Github, href: "https://github.com/MatthieuLUIGGI", label: "GitHub", color: "hover:text-foreground" },
+    { icon: Mail, href: "mailto:matluiggi@sfr.fr", label: "Email", color: "hover:text-primary" },
   ];
 
   return (
@@ -30,10 +30,10 @@ const Index = () => {
           <div className="flex-1 text-center md:text-left space-y-6 animate-slide-in-right">
             <div className="space-y-2">
               <h1 className="text-4xl md:text-5xl font-bold">
-                <span className="text-gradient">Votre Nom</span>
+                <span className="text-gradient">Matthieu LUIGGI</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Étudiant en développement informatique
+                Étudiant en BTS SIO option SLAM
               </p>
             </div>
 

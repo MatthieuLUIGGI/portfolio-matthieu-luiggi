@@ -20,7 +20,7 @@ const Header = () => {
             to="/" 
             className="text-2xl font-bold text-gradient hover:scale-105 transition-transform"
           >
-            MonPortfolio
+            Matthieu LUIGGI
           </Link>
           
           <ul className="flex items-center gap-8">

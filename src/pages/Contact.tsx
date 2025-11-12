@@ -5,22 +5,22 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@example.com",
-      href: "mailto:contact@example.com",
+      value: "matluiggi@sfr.fr",
+      href: "mailto:matluiggi@sfr.fr",
       color: "hover:text-primary",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/votre-profil",
-      href: "https://linkedin.com",
+      value: "linkedin.com/in/matthieu-luiggi",
+      href: "https://www.linkedin.com/in/matthieu-luiggi",
       color: "hover:text-[#0077B5]",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/votre-username",
-      href: "https://github.com",
+      value: "github.com/MatthieuLUIGGI",
+      href: "https://github.com/MatthieuLUIGGI",
       color: "hover:text-foreground",
     },
   ];
@@ -41,10 +41,10 @@ const Contact = () => {
         <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <p className="text-muted-foreground mb-4">Vous pouvez me contacter à :</p>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:matluiggi@sfr.fr"
             className="text-4xl font-bold text-gradient hover:scale-105 transition-transform inline-block"
           >
-            contact@example.com
+            matluiggi@sfr.fr
           </a>
         </div>
 
