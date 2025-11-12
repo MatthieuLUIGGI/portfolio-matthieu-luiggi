@@ -1,15 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
 import profileImage from "@/assets/profile.jpg";
 
 const Index = () => {
-  const socialLinks = [
-    { icon: Linkedin, href: "https://www.linkedin.com/in/matthieu-luiggi", label: "LinkedIn", color: "hover:text-[#0077B5]" },
-    { icon: Github, href: "https://github.com/MatthieuLUIGGI", label: "GitHub", color: "hover:text-foreground" },
-    { icon: Mail, href: "mailto:matluiggi@sfr.fr", label: "Email", color: "hover:text-primary" },
-  ];
-
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="max-w-4xl w-full">
@@ -60,38 +53,11 @@ const Index = () => {
                 <Link to="/contact">Me contacter</Link>
               </Button>
             </div>
-
-            {/* Social Links */}
-            <div className="flex gap-6 justify-center md:justify-start pt-4">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
-                      "w-12 h-12 rounded-full glass flex items-center justify-center transition-all duration-300 hover:scale-110 hover-glow-gold",
-                      social.color
-                    )}
-                    aria-label={social.label}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-// Helper function from utils
-function cn(...classes: (string | undefined | null | false)[]) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default Index;

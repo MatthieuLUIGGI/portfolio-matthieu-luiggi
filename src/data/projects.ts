@@ -91,7 +91,7 @@ export const projects: Project[] = [
     title: "Site Web Copropriété Le Rameau",
     description: "Plateforme web moderne pour la gestion d'une copropriété",
     fullDescription: "Site web développé avec les technologies modernes (React, TypeScript) pour faciliter la communication et la gestion d'une copropriété. Interface élégante et responsive avec base de données PostgreSQL.",
-    image: "/placeholder.svg",
+    image: new URL("@/assets/le-rameau.png", import.meta.url).href,
     technologies: [
       { name: "TypeScript", icon: "📘" },
       { name: "React", icon: "⚛️" },
