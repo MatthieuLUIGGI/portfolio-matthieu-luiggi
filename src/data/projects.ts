@@ -98,6 +98,7 @@ export const projects: Project[] = [
       { name: "CSS", icon: "🎨" },
       { name: "PostgreSQL", icon: "🗄️" },
     ],
+    liveUrl: "https://lerameau.vercel.app",
     githubUrl: "https://github.com/MatthieuLUIGGI",
     context: "Projet personnel pour moderniser la gestion d'une copropriété",
     features: [
