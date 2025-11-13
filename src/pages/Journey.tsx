@@ -12,6 +12,13 @@ const Journey = () => {
   const timelineItems: TimelineItem[] = [
     {
       year: "2025",
+      title: "Alternance Blue Company Dijon",
+      institution: "Blue Company Dijon",
+      description: "Participation à un projet en TypeScript sur Vue.js et début d'analyse pour une IA.",
+      type: "work",
+    },
+    {
+      year: "2025",
       title: "Stage au Rectorat de Dijon",
       institution: "Rectorat de Dijon",
       description: "Développement d'une application de cartographie des systèmes d'information pour le personnel académique durant 7 semaines.",
@@ -25,10 +32,17 @@ const Journey = () => {
       type: "work",
     },
     {
+      year: "2025",
+      title: "Bachelor Développement Full Stack",
+      institution: "École CODA",
+      description: "Poursuite sur un bachelor en alternance à l'école CODA.",
+      type: "education",
+    },
+    {
       year: "2023-2025",
       title: "BTS SIO option SLAM",
       institution: "BTS Services Informatiques aux Organisations",
-      description: "Formation en Solutions Logicielles et Applications Métiers. Actuellement en 2ème année.",
+      description: "Formation en Solutions Logicielles et Applications Métiers.",
       type: "education",
     },
     {
@@ -54,7 +68,7 @@ const Journey = () => {
           {/* Timeline items */}
           <div className="space-y-12">
             {timelineItems.map((item, index) => {
-              const isLeft = index % 2 === 0;
+              const isLeft = item.type === "education";
               const Icon = item.type === "education" ? GraduationCap : Briefcase;
 
               return (
