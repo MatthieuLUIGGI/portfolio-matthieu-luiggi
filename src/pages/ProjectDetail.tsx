@@ -139,19 +139,6 @@ const ProjectDetail = () => {
                   </a>
                 </Button>
               )}
-              {project.githubUrl && (
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full glass hover-glow-blue"
-                  size="lg"
-                >
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-4 h-4 mr-2" />
-                    Voir sur GitHub
-                  </a>
-                </Button>
-              )}
             </div>
           </div>
         </div>
