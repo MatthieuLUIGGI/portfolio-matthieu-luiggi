@@ -46,11 +46,26 @@ const ProjectDetail = () => {
         {/* Project image */}
         <div className="mb-12 animate-fade-in">
           <div className="glass rounded-2xl overflow-hidden shadow-elegant">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-[500px] object-cover"
-            />
+            {project.liveUrl ? (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-pointer group"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-[500px] object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </a>
+            ) : (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-[500px] object-cover"
+              />
+            )}
           </div>
         </div>
 
