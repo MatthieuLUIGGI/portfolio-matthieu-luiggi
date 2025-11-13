@@ -19,6 +19,13 @@ const Journey = () => {
     },
     {
       year: "2025",
+      title: "Bachelor Développement Full Stack",
+      institution: "École CODA",
+      description: "Poursuite sur un bachelor en alternance à l'école CODA.",
+      type: "education",
+    },
+    {
+      year: "2025",
       title: "Stage au Rectorat de Dijon",
       institution: "Rectorat de Dijon",
       description: "Développement d'une application de cartographie des systèmes d'information pour le personnel académique durant 7 semaines.",
@@ -30,13 +37,6 @@ const Journey = () => {
       institution: "Rectorat de Dijon",
       description: "Développement d'un site web pour la création de cartes de visite pour le personnel académique durant 5 semaines.",
       type: "work",
-    },
-    {
-      year: "2025",
-      title: "Bachelor Développement Full Stack",
-      institution: "École CODA",
-      description: "Poursuite sur un bachelor en alternance à l'école CODA.",
-      type: "education",
     },
     {
       year: "2023-2025",
