@@ -55,9 +55,9 @@ const Journey = () => {
   ];
 
   return (
-    <div className="min-h-screen py-24 px-4">
+    <div className="min-h-screen py-20 sm:py-24 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-16 animate-slide-up">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16 animate-slide-up">
           <span className="text-gradient">Mon Parcours</span>
         </h1>
 
@@ -66,7 +66,7 @@ const Journey = () => {
           <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold via-blue to-gold hidden md:block" />
 
           {/* Timeline items */}
-          <div className="space-y-12">
+          <div className="space-y-8 sm:space-y-12">
             {timelineItems.map((item, index) => {
               const isLeft = item.type === "education";
               const Icon = item.type === "education" ? GraduationCap : Briefcase;
@@ -80,17 +80,17 @@ const Journey = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Content */}
-                  <div className={`w-full md:w-5/12 ${isLeft ? "md:pr-12" : "md:pl-12"}`}>
-                    <div className="glass p-6 rounded-xl hover-glow-gold transition-all duration-300 hover:scale-105">
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-gold to-blue flex items-center justify-center">
-                          <Icon className="w-5 h-5 text-primary-foreground" />
+                  <div className={`w-full md:w-5/12 ${isLeft ? "md:pr-8 lg:pr-12" : "md:pl-8 lg:pl-12"}`}>
+                    <div className="glass p-4 sm:p-6 rounded-xl hover-glow-gold transition-all duration-300 hover:scale-105">
+                      <div className="flex items-center gap-2 sm:gap-3 mb-3">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-r from-gold to-blue flex items-center justify-center flex-shrink-0">
+                          <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
                         </div>
-                        <span className="text-2xl font-bold text-gradient">{item.year}</span>
+                        <span className="text-lg sm:text-2xl font-bold text-gradient">{item.year}</span>
                       </div>
-                      <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                      <p className="text-primary mb-2">{item.institution}</p>
-                      <p className="text-muted-foreground">{item.description}</p>
+                      <h3 className="text-lg sm:text-xl font-semibold mb-2">{item.title}</h3>
+                      <p className="text-primary mb-2 text-sm sm:text-base">{item.institution}</p>
+                      <p className="text-muted-foreground text-sm sm:text-base">{item.description}</p>
                     </div>
                   </div>
 
