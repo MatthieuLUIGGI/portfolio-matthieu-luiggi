@@ -45,19 +45,23 @@ const ProjectDetail = () => {
 
         {/* Project image */}
         <div className="mb-12 animate-fade-in">
-          <div className="glass rounded-2xl overflow-hidden shadow-elegant">
+          <div className="glass rounded-2xl overflow-hidden shadow-elegant relative">
             {project.liveUrl ? (
               <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block cursor-pointer group"
+                className="block cursor-pointer group relative"
               >
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-[500px] object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-full flex items-center gap-2 shadow-lg transition-all duration-300 group-hover:bg-primary">
+                  <ExternalLink className="w-4 h-4" />
+                  <span className="text-sm font-medium">Voir le site</span>
+                </div>
               </a>
             ) : (
               <img
