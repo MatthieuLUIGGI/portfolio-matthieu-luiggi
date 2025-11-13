@@ -14,23 +14,23 @@ const Index = () => {
               <img
                 src={profileImage}
                 alt="Photo de profil"
-                className="relative w-64 h-64 rounded-full object-cover border-4 border-glass-border shadow-elegant group-hover:scale-105 transition-transform duration-300"
+                className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover border-4 border-glass-border shadow-elegant group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
 
           {/* Content */}
-          <div className="flex-1 text-center md:text-left space-y-6 animate-slide-in-right">
+          <div className="flex-1 text-center md:text-left space-y-4 sm:space-y-6 animate-slide-in-right">
             <div className="space-y-2">
-              <h1 className="text-4xl md:text-5xl font-bold">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
                 <span className="text-gradient">Matthieu LUIGGI</span>
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg sm:text-xl text-muted-foreground">
                 Étudiant en BTS SIO option SLAM
               </p>
             </div>
 
-            <p className="text-foreground/80 text-lg leading-relaxed max-w-2xl">
+            <p className="text-foreground/80 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
               Passionné par le développement web et les technologies modernes, 
               je crée des expériences digitales élégantes et performantes. 
               Toujours en quête d'apprentissage et d'innovation.

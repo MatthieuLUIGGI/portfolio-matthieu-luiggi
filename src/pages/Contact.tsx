@@ -27,22 +27,22 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-2xl w-full text-center space-y-12">
-        <div className="space-y-4 animate-slide-up">
-          <h1 className="text-5xl font-bold">
+      <div className="max-w-2xl w-full text-center space-y-8 sm:space-y-12">
+        <div className="space-y-3 sm:space-y-4 animate-slide-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             <span className="text-gradient">Contactez-moi</span>
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground px-4">
             Vous avez un projet en tête ? N'hésitez pas à me contacter !
           </p>
         </div>
 
         {/* Email principal */}
-        <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <p className="text-muted-foreground mb-4">Vous pouvez me contacter à :</p>
+        <div className="animate-fade-in px-4" style={{ animationDelay: "0.2s" }}>
+          <p className="text-muted-foreground mb-3 sm:mb-4 text-sm sm:text-base">Vous pouvez me contacter à :</p>
           <a
             href="mailto:matluiggi@sfr.fr"
-            className="text-4xl font-bold text-gradient hover:scale-105 transition-transform inline-block"
+            className="text-xl sm:text-2xl md:text-4xl font-bold text-gradient hover:scale-105 transition-transform inline-block break-all"
           >
             matluiggi@sfr.fr
           </a>
