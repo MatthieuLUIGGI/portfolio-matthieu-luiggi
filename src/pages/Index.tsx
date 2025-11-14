@@ -26,14 +26,12 @@ const Index = () => {
                 <span className="text-gradient">Matthieu LUIGGI</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
-                Étudiant en BTS SIO option SLAM
+                Étudiant en développement
               </p>
             </div>
 
             <p className="text-foreground/80 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
-              Passionné par le développement web et les technologies modernes, 
-              je crée des expériences digitales élégantes et performantes. 
-              Toujours en quête d'apprentissage et d'innovation.
+              Bonjour, je m'appelle Matthieu LUIGGI, je suis actuellement en Bachelor Développement Full Stack à l'école CODA à Dijon, je poursuis mon parcours après l'obtention de mon BTS SIO option SLAM. J'ai 20 ans et je fais du développement depuis le lycée. Je pratique le tennis depuis de nombreuses années et j'adore voyager. Durant ma scolarité, j'ai passé un bac général avec spécialités Maths, Physique et NSI.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
